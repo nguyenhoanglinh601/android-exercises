@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="134dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/taco"
+                app:layout_constraintBottom_toTopOf="@+id/textView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="158dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_textview"
+                android:gravity="center"
+                android:text="Cỡ bánh"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="158dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:checkedButton="@id/radioButtonSizeMedium"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <RadioButton
+                    android:button="@drawable/custom_checkbox"
+                    android:id="@+id/radioButtonSizeMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vừa" />
+
+                <RadioButton
+                    android:button="@drawable/custom_checkbox"
+                    android:id="@+id/radioButtonSizeLagre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lớn" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="158dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_textview"
+                android:gravity="center"
+                android:text="Vỏ bánh"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="158dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:checkedButton="@id/radioButtonTortiallaFlour"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/radioGroup"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <RadioButton
+                    android:button="@drawable/custom_checkbox"
+                    android:id="@+id/radioButtonTortiallaCorn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bột bắp" />
+
+                <RadioButton
+                    android:button="@drawable/custom_checkbox"
+                    android:id="@+id/radioButtonTortiallaFlour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bột mì">
+
+                </RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="378dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/custom_textview"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:text="Nhân bánh"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+            <CheckBox
+                android:button="@drawable/custom_checkbox"
+                android:id="@+id/checkBoxBeef"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:text="Bò"
+                app:layout_constraintBottom_toTopOf="@+id/checkBoxChicken"
+                app:layout_constraintEnd_toStartOf="@+id/checkBoxRice"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <CheckBox
+                android:button="@drawable/custom_checkbox"
+                android:id="@+id/checkBoxChicken"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="22dp"
+                android:text="Gà"
+                app:layout_constraintBottom_toTopOf="@+id/checkBoxWhiteFish"
+                app:layout_constraintEnd_toStartOf="@+id/checkBoxBean"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxBeef" />
+
+            <CheckBox
+                android:button="@drawable/custom_checkbox"
+                android:id="@+id/checkBoxWhiteFish"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:text="Cá"
+                app:layout_constraintBottom_toTopOf="@+id/button_place"
+                app:layout_constraintEnd_toStartOf="@+id/checkBoxSeaFood"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxChicken" />
+
+
+            <CheckBox
+
+                android:button="@drawable/custom_checkbox"
+                android:id="@+id/checkBoxRice"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="11dp"
+                android:text="Cơm"
+                app:layout_constraintBottom_toTopOf="@+id/checkBoxBean"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/checkBoxBeef"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <CheckBox
+                android:button="@drawable/custom_checkbox"
+                android:id="@+id/checkBoxBean"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="10dp"
+                android:text="Đậu"
+                app:layout_constraintBottom_toTopOf="@+id/checkBoxSeaFood"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/checkBoxChicken"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxRice" />
+
+            <CheckBox
+                android:button="@drawable/custom_checkbox"
+                android:id="@+id/checkBoxSeaFood"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="1dp"
+                android:text="Hải sản"
+                app:layout_constraintBottom_toTopOf="@+id/button_place"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/checkBoxWhiteFish"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxBean" />
+
+            <Button
+                android:background="@drawable/custom_textview"
+                android:id="@+id/button_place"
+                android:layout_width="374dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="#00FFFF"
+                android:text="Đặt hàng SMS"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxWhiteFish" />
+
+            <Button
+                android:background="@drawable/custom_textview"
+                android:id="@+id/button_detail"
+                android:layout_width="374dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="#FF03DAC5"
+                android:text="Chi tiết đơn hàng"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.615"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_place" />
+
+            <Button
+                android:background="@drawable/custom_textview"
+                android:id="@+id/button_address"
+                android:layout_width="374dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="#FF03DAC5"
+                android:text="Xem đường đi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.615"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_detail" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
